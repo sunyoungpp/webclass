@@ -1,0 +1,24 @@
+html{
+    width:auto;
+}
+/* 쓰지않아도 오토로 적용되어있음 */
+.boxa{
+    border:10px solid red;
+    width:500px;
+    box-sizing:content-box;
+    /* 기본값 : width/height를 지정하였을 때 안쪽의 컨텐트가 입력되는 컨텐트 박스의 크기를 변형한다. */
+}
+
+h2{
+    border:1px solid blue;
+}
+
+.boxb{
+    width:500px;
+    border:10px solid green;
+    box-sizing: border-box;
+}
+/* 
+width:auto;(기본)
+부모만큼 너비를 상속받은거
+ */
