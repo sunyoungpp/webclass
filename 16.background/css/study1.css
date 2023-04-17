@@ -14,7 +14,7 @@
     /* background-position-x:100px;
     background-position-y:100px; */
     /* background-position:100px 100px; */
-    background: pink url("../img/cute.jpg") no-repeat 100px 100px;
+    background: rgb(52, 109, 66) url("../img/cute.jpg") repeat-y 100px 100px;
 }
 .box2{
     width:1000px;
@@ -22,7 +22,7 @@
     border:1px solid blue;
     margin:0 auto;
     /* background: yellowgreen url("../img/cute.jpg") no-repeat left bottom; */
-    background:yellowgreen url(../img/cute.jpg) no-repeat calc(100% - 100px) calc(100% - 50px);
+    background:rgba(47, 98, 238, 0.137) url(../img/cute.jpg) no-repeat calc(100% - 100px) calc(100% - 100px);
 }
 .box2>h2{
     border:1px solid red;
@@ -35,4 +35,33 @@
     margin:0 auto;
     background:url(../img/cute.jpg) no-repeat 0 0;
     background-size:contain;
+}
+.box4{
+    border:10px solid red;
+    height: 100vh;
+    /* background-image: url(../img/cute.jpg),url(../img/cute.jpg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: 0 0,100% 100%; */
+    background:url(../img/cute.jpg) no-repeat 0 0,url(../img/cute.jpg) no-repeat 100% 100%;
+    /* 배경은 ,(콤마)를 통해서 2개이상 넣어줄 수 있다 */
+}
+.box5{
+    border: 10px solid blue;
+    width:30vw;
+    height: 30vh;
+    margin:0 auto;
+    /* background-image: linear-gradient(45deg,red,blue); */
+    background-image: radial-gradient(red,blue);
+}
+.box6{
+    width:100%;
+    height:500px;
+    border: 10px solid green;
+    margin:0 auto;
+    /* background:red; */
+    background-image:linear-gradient(45deg,red,blue), url("../img/cute.jpg");
+    background-blend-mode:exclusion;
+    /* 혼합옵션 */
+    background-attachment:fixed;
+    /* scroll(기본값) */
 }
