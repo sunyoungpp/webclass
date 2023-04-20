@@ -11,7 +11,7 @@
     clear:both;
 }
 .box img{
-    float:left;
+    float:right;
     width:50%;
     border: 5px solid blue;
     margin-right:20px;

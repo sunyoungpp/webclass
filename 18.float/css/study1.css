@@ -29,6 +29,7 @@
     content:"";
     display:block;
     clear:both;
+    /* clear : float된 태그 밑에 배치 */
 }
 /* .clear{clear:both;background: lime;} */
 .nextP{

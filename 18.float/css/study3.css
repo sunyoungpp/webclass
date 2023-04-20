@@ -5,6 +5,7 @@
     margin:0 auto;
 }
 .box>section{
+    width:250px;
     height: 300px;
     font-size:5rem;
     float:left;
@@ -15,20 +16,17 @@
     clear:both;
 }
 .box .s1{
-    width:250px;
     background: red;
+    box-sizing: border-box;
     border:50px solid lime;
 }
 .box .s2{
-    width:250px;
     background: blue;
 }
 .box .s3{
-    width:250px;
     background: green;
 }
 .box .s4{
-    width:250px;
     background: orange;
 }
 
@@ -42,6 +40,7 @@
 .box2>section{
     font-size:5rem;
     float:left;
+    width:calc(50% - 5px);
 }
 .box2:after{
     content:"";
@@ -49,23 +48,19 @@
     clear:both;
 }
 .box2 .s1{
-    width:calc(50% - 5px);
     background:red;
     margin-right: 10px;
     margin-bottom: 10px;
 }
 .box2 .s2{
-    width:calc(50% - 5px);
     background: blue;
     margin-bottom: 10px;
 }
 .box2 .s3{
-    width:calc(50% - 5px);
     background:green;
     margin-right:10px;
 }
 .box2 .s4{
-    width:calc(50% - 5px);
     background: orange;
 }
 
