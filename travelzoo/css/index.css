@@ -45,6 +45,9 @@ main form{
     /* 16진수 색상 표현법에서 똑같은 문자가 6개가 반복된다면 3자리로 줄여서 표현할 수 있다. */
 }
 main form *{vertical-align: middle;}
+.nation{
+    border: 1px solid red;
+}
 .nation>section{
     box-sizing:border-box;
     float:left;
