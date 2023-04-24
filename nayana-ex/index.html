@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나야나비즈니스</title>
+    <link rel="stylesheet" href="./css/index1.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="all">
@@ -47,11 +52,11 @@
                 <section>
                     <h2>
                         <img src="./img/m_tit_notice.gif" alt="뉴스공지사항">
-                        <a href="#">
+                        <a href="#" class="btnMore">
                             <img src="./img/more.gif" alt="더보기">
                         </a>
                     </h2>
-                    <ul>
+                    <ul class="noticeList">
                         <li><a href="#">notice 1 <span>2011-02-21</span></a></li>
                         <li><a href="#">notice 2 <span>2011-02-20</span></a></li>
                         <li><a href="#">notice 3 <span>2011-02-19</span></a></li>
@@ -60,7 +65,7 @@
                 </section>
                 <section>
                     <h2><img src="./img/m_tit_quick.gif" alt="퀵메뉴"></h2>
-                    <ul>
+                    <ul class="quickList">
                         <li>
                             <a href="#">
                                 <img src="./img/q_m1.gif" alt="상담문의게시판">
@@ -80,16 +85,18 @@
                 </section>
             </div>
         </main>
-        <footer>
-            <div class="flogo">
+    </div>
+    <footer>
+        <div class="innerFooter">
+            <div class="f_left">
                 <h1>
                     <a href="#">
                         <img src="./img/logo_foot.gif" alt="나야나비즈니스하단로고">
                     </a>
                 </h1>
             </div>
-            <div class="corinfo">
-                <ul>
+            <div class="f_right">
+                <ul class="footMenu">
                     <li>
                         <a href="#">
                             <img src="./img/f_priv.gif" alt="개인정보취급방침">
@@ -116,8 +123,7 @@
                     (주)인터넷아야나 주소 : 서울특별시 금천구 가산동 60-11 스타밸리타워 11층 / 대표전화 :<a href="tel:0215777774">02-1577-7774</a> /  팩스 : 02-852-4744
                 </address>
                 <p>COPYRIGHT (C) NAYAZONE CO.LTD. ALL RIGHTS RESERVED.</p>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
