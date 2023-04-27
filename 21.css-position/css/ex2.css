@@ -2,7 +2,7 @@
 
 /* layout */
 .mainBanner{
-    height: 780px;
+    height: 100vh;
     position: relative;
 }
 .mainBanner>video{

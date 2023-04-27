@@ -6,7 +6,8 @@
 .boxA{
     border: 10px solid black;
     position:relative;
-    bottom:100px;
+    left:100px;
+    top:100px;
 }
 .boxB{
     border: 10px solid red;
