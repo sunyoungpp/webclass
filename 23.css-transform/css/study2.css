@@ -20,7 +20,7 @@ body{margin-bottom:500px;}
     animation-delay:0s;
     animation-iteration-count: infinite;
     animation-direction: normal; */
-    animation:sunRotate 1000s linear 0s;
+    animation:sunRotate 500s linear 0s infinite;
 }
 
 @keyframes sun{
@@ -34,7 +34,7 @@ body{margin-bottom:500px;}
     width:400px;
     height: 400px;
     background: skyblue;
-    animation:sun 1000s linear 0s;
+    animation:sun 500s linear 0s infinite;
     transition: all 0.5s ease 0s;
 }
 .boxb:hover{
