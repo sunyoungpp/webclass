@@ -190,15 +190,16 @@ main{position: relative;}
 .date{font-size:0.5rem;}
 
 /* main2 */
-.culture{border: 1px solid red;}
 .culture>ul{display:flex;}
 .culture>ul>li{
-    flex:1;
     position:relative;
+    overflow: hidden;
 }
 .culture img{
-    /* border:1px solid green; */
+    transition: all 0.5s ease 0s;
+    width: 100%;height: 100%;
 }
+.culture img:hover{transform: scale(1.2);}
 .culture h4{
     color:#fff;
     font-weight: bold;
@@ -207,7 +208,6 @@ main{position: relative;}
     left:50%;top:70%;   
     transform: translate(-50%,-50%);
     height:30px;
-    border: 1px solid lime;
 }
 .culture h4:after{
     content:"";
@@ -219,15 +219,12 @@ main{position: relative;}
 }
 .culture p{
     color:#fff;
-    border: 1px solid blue;
     position: absolute;
     left:50%;top:calc(70% + 70px);
     transform: translate(-50%,-50%);
 }
-
 /* main3 */
 .notice>ul{
-    border: 1px solid red;
     padding-bottom: 200px;
     margin-top:100px;
     display:flex;
@@ -235,7 +232,6 @@ main{position: relative;}
 }
 .notice:after{
     content:"";
-
 }
 .notice>ul>li{
     width:calc((100% - 60px) / 4);
@@ -254,8 +250,7 @@ main{position: relative;}
     margin-bottom: 20px;
 }
 
-
-/* footer{border: 10px solid green;} */
+/* footer1 */
 .Foot{
     padding:70px 0;
     border-top:1px solid #ddd;
@@ -289,17 +284,26 @@ main{position: relative;}
 }
 .footMenu2>ul>li.blue{color:blue;}
 
-
+/* footer2 */
 .conInfo{
-    border:1px solid blue;
-    display:flex;
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:30px 0;
+    position: relative;
 }
-.footLogo{
-    border: 1px solid gold;
-    width:140px;height:20px;
-}
+.footLogo{display: flex;}
 .footLogo img{
-    width:100%;height:100%;
-    object-fit: contain;
+    width:130px;
+    object-fit: cover;
+    position: absolute;
+    left:50%;top:50%;
+    transform: translate(-50%,-50%);
 }
+.footLogo p{
+    color:#777;
+    margin-right:150px;
+}
+.snsMenu>ul{display: flex;}
+.snsMenu>ul>li{margin-right:10px;}
+.snsMenu>ul>li:last-of-type{margin-right: 0;}
