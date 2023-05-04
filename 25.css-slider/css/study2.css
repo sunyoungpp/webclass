@@ -2,27 +2,26 @@
 ol,ul{list-style: none;}
 
 /* layout */
-html{background: lightcyan;}
+html{background: mintcream;}
 .station{
-    width:1270px;
-    height: 600px;
+    width:100%;
+    height: 400px;
+    border: 1px solid red;
     margin: 0 auto;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 .train{
-    width:calc(400% /2.5);
-    /* 기차의 너비를 보이길 원하는 슬라이드의 갯수로 나누면 됨 */
-    height: 100%;
-    display: flex;
-    background: mintcream;
-    transform: translateX(0);
-    transition: all 0.5s ease 0s;
+    width:100%;
+    background:lightgreen;
+    transition: all 1s ease 0s;
+    transform: translateY(0);
 }
 .train>li{
-    border: 3px solid lightseagreen;
-    /* width:25%; */
-    flex:1;
+    width:100%;
+    height: 400px;
+    border: 1px solid blue;
+    box-sizing: border-box;
 }
 .controler{
     /* border: 1px solid red; */
@@ -44,7 +43,7 @@ html{background: lightcyan;}
     display: flex;
 }
 .pagination>li{
-    background:lightseagreen;
+    background:green;
     opacity: 0.4;
     width:10px;height: 10px;
     border-radius: 50%;
