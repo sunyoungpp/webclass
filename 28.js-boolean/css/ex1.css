@@ -1,0 +1,28 @@
+table{
+    border-collapse:collapse;
+    /* 셀 태그 사이의 간격을 없애줌 */
+}
+.gradeStyle{
+    width: 500px;
+    margin: 0 auto;
+}
+.gradeStyle caption{font-size: 2rem;font-weight: bold;}
+.gradeStyle th{
+    border: 1px solid #000;
+    padding:5px 0;
+    border-left:none ;
+}
+.gradeStyle td{
+    border: 1px solid #000;
+    padding:5px 0;
+    text-align: center;
+    border-right: none;
+}
+.gradeStyle tr:last-of-type>th{
+    background:lightseagreen;
+    color:#fff;
+}
+.gradeStyle tr:last-of-type>td{
+    background: lightseagreen;
+    color:#fff;
+}
