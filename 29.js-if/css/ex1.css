@@ -21,10 +21,10 @@ table{
     border-right: none;
 }
 .gradeStyle tr:last-of-type>th{
-    background:skyblue;
+    background:#31d2f7;
     color:#fff;
 }
 .gradeStyle tr:last-of-type>td{
-    background: skyblue;
+    background: #31d2f7;
     color:#fff;
 }

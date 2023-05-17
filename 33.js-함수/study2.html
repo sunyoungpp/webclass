@@ -18,9 +18,28 @@
         // function a(){
         //     alert("A함수 실행함")
         // }
+
+        // let a = function(){
+        //     alert("A함수 실행함")
+        // };
+        // a()
+        
         let a = function(){
-            alert("A함수 실행함")
-        };
+            return "A"
+        }
+        let b = ()=>{
+            return "B"
+        }
+        // 화살표함수는 기존의 익명함수표현법 function(){} 에서 function키워드를 생략하고 ()=>{} 매개변수의 괄호와 실행소스코드의 중괄호 사이에 화살표를 표현하는 방법
+
+        // let sumNumber = function(n1,n2){
+        //     return n1+n2
+        // }
+        let sumNumber = (n1,n2)=>{
+            return n1+n2
+        }
+        console.log(sumNumber(10,20))
+        console.log(a()+b())
     </script>
     <h2>객체 안에서의 메서드 표현</h2>
     <p>사물을 표현하는데 있어서 사물이 갖고 있는 동작을 표현</p>
@@ -29,10 +48,14 @@
             name:"박선영",
             age:21,
             sayHello:function(){
-                // alert("안녕하세요")
+                alert("안녕하세요")
+            },
+            sayGoodbye:()=>{
+               alert("안녕히가세요") 
             }
         }
         person.sayHello()
+        person.sayGoodbye()
     </script>
     <h2>콜백함수 표현</h2>
     <p>callback함수 표현방법</p>
