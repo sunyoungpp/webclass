@@ -78,13 +78,13 @@ header{
     display:flex;
     align-items: center;
     padding:0 10px;
+    cursor: pointer;
 }
 .mainBanner>dl>dt.on{
     font-weight: bold;
     color:#2a377f;
     border-bottom:1px solid #2a377f;
 }
-
 .mainBanner>dl>dd{
     position: absolute;
     left:0;top:40px;
@@ -92,7 +92,7 @@ header{
     display:none;
 }
 .mainBanner>dl>dt.on+dd{
-    display:block;
+    display: block;
 }
 .mainBanner dd li{
     margin-bottom: 2px;
@@ -137,6 +137,7 @@ header{
     padding:0 14px;
     background:#1c2566;
     margin-right: 4px;
+    cursor: pointer;
 }
 .tabMenu>dt.on{
     background: #4152ba;
