@@ -8,9 +8,9 @@ img{
 .station{
     width: 100%;
     height: 600px;
-    border: 10px solid red;
     margin:0 auto;
     overflow: hidden;
+    position: relative;
 }
 .train{
     width:400%;
@@ -63,4 +63,26 @@ img{
 }
 .slideTxt p{
     font-size: 0.4em;
+}
+.pagination{
+    position: absolute;
+    left: 50%;
+    bottom:50px;
+    transform: translateX(-50%);
+    color: #fff;
+    display: flex;
+}
+.pagination>li{
+    border:1px solid coral;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius:50%;
+}
+.pagination>li.on{
+    background:coral;
+}
+.pagination>li:last-of-type{
+    margin-right: 0;
 }
