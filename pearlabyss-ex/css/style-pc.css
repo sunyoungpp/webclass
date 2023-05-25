@@ -109,7 +109,7 @@ main{position: relative;}
     height: 780px;
     position: relative;
 }
-.videoBanner::after{
+.videoBanner:after{
     content:"";
     position: absolute;
     left:0;top:0;
