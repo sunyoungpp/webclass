@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>pearlabyss</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style-pc.css">
+    <link rel="stylesheet" href="./css/style-mo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <div class="contents_wrap">
-        <header>
+        <header class="pc">
             <div class="innerHeader">
                 <div class="logoArea">
                     <h1>
@@ -80,6 +82,17 @@
                 </nav>
             </div>
         </header>
+        <header class="mo">
+            <div class="innerHeader">
+                <div class="btnMoMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1 class="moLogo"><a href="#"><img src="./img/cm_bi_white.svg" alt="검은사막로고"></a></h1>
+                <a href="#" class="btnMenuLang"><img src="./img/m_icn_lang.svg" alt="언어선택메뉴버튼"></a>
+            </div>
+        </header>
         <main>
             <div class="videoBanner">
                 <video autoplay muted loop>
@@ -91,7 +104,7 @@
                     <a href="#">자세히 보기</a>
                 </div>
             </div> 
-            <div class="news cw">
+            <div class="news">
                 <h3>NEWS</h3>
                 <ul>
                     <li>
@@ -110,19 +123,19 @@
                     </li>
                     <li>
                         <a href="#">
-                            <h4>펄어비스(대표 허진영)가 검은사막 서비스 3,000일에 감사의 의미를 뜻깊게...</h4>
+                            <h4>펄어비스(대표 허진영)가 검은사막 서비스 3,000일에 감사의 의미를...</h4>
                             <p class="date">2023.03.13</p>
-                            <p>펄어비스(대표 허진영)가 검은사막 서비스 3,000일에 감사의 의미를 뜻깊게...</p>
+                            <p>펄어비스(대표 허진영)가 검은사막 서비스 3,000일에 감사의 의미를...</p>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="culture cw">
+            <div class="culture">
                 <ul>
                     <li>
                         <a href="#">
                             <img src="./img/main_category_company.jpg" alt="펄어비스 우리의 비전과 가치">
-                            <div class="box">
+                            <div class="flotingBox">
                                 <h4>펄어비스</h4>
                                 <p>우리의 비전과 가치</p>
                             </div>
@@ -131,7 +144,7 @@
                     <li>
                         <a href="#">
                             <img src="./img/main_category_lab.jpg" alt="연구소 한계를 뛰어넘는 곳">
-                            <div class="box">
+                            <div class="flotingBox">
                                 <h4>연구소</h4>
                                 <p>한계를 뛰어넘는 곳</p>
                             </div>
@@ -140,7 +153,7 @@
                     <li>
                         <a href="#">
                             <img src="./img/main_category_culture.jpg" alt="게임 잊지 못할 모험">
-                            <div class="box">
+                            <div class="flotingBox">
                                 <h4>게임</h4>
                                 <p>잊지 못할 모험</p>
                             </div>
@@ -149,7 +162,7 @@
                     <li>
                         <a href="#">
                             <img src="./img/main_category_in.jpg" alt="문화 파괴적인 창조자">
-                            <div class="box">
+                            <div class="flotingBox">
                                 <h4>문화</h4>
                                 <p>파괴적인 창조자</p>
                             </div>
@@ -158,7 +171,7 @@
                     <li>
                         <a href="#">
                             <img src="./img/main_category_news.jpg" alt="소식 생생한 펄어비스 이야기">
-                            <div class="box">
+                            <div class="flotingBox">
                                 <h4>소식</h4>
                                 <p>생생한 펄어비스 이야기</p>
                             </div>
@@ -166,7 +179,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="notice cw">
+            <div class="notice">
                 <ul>
                     <li>
                         <a href="#">
@@ -208,66 +221,64 @@
             </div>
         </main>
         <footer>
-            <div class="Foot">
-                <div class="footMenu1 cw">
-                    <ul>
-                        <li><a href="#">소개</a>
-                            <ul>
-                                <li><a href="#">펄어비스 소개</a></li>
-                                <li><a href="#">연구소</a></li>
-                                <li class="blankStyle"><a href="#">CCP</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">게임</a>
-                            <ul>
-                                <li><a href="#">검은사막</a></li>
-                                <li><a href="#">검은사막 모바일</a></li>
-                                <li><a href="#">붉은사막</a></li>
-                                <li><a href="#">도깨비</a></li>
-                                <li><a href="#">플랜 8</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">미디어</a>
-                            <ul>
-                                <li><a href="#">보도자료</a></li>
-                                <li><a href="#">미디어 행사</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">문화</a>
-                            <ul>
-                                <li><a href="#">기업문화</a></li>
-                                <li><a href="#">복지</a></li>
-                                <li><a href="#">펄어비스 소식</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">채용</a>
-                            <ul>
-                                <li><a href="#">채용소개</a></li>
-                                <li><a href="#">지원하기</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">투자정보</a>
-                            <ul>
-                                <li><a href="#">기업지배구조</a></li>
-                                <li><a href="#">주가정보</a></li>
-                                <li><a href="#">재무정보</a></li>
-                                <li><a href="#">공사&middot;공고</a></li>
-                                <li><a href="#">IR 자료</a></li>
-                                <li><a href="#">지속가능경영</a></li>
-                            </ul>
-                        </li>
-                </div>
-                <div class="footMenu2 cw">
-                    <ul>
-                        <li><a href="#">광고/제휴 문의</a></li>
-                        <li><a href="#">기업윤리 신고센터</a></li>
-                        <li class="blue"><a href="#">개인정보 처리방침</a></li>
-                        <li class="blankStyle"><a href="#">펄어비스 스토어</a></li>
-                        <li class="blankStyle"><a href="#">게임 고객센터</a></li>
-                    </ul>
-                </div>
+            <div class="footMenu1">
+                <ul>
+                    <li><a href="#">소개</a>
+                        <ul>
+                            <li><a href="#">펄어비스 소개</a></li>
+                            <li><a href="#">연구소</a></li>
+                            <li class="blankStyle"><a href="#">CCP</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">게임</a>
+                        <ul>
+                            <li><a href="#">검은사막</a></li>
+                            <li><a href="#">검은사막 모바일</a></li>
+                            <li><a href="#">붉은사막</a></li>
+                            <li><a href="#">도깨비</a></li>
+                            <li><a href="#">플랜 8</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">미디어</a>
+                        <ul>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">미디어 행사</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">문화</a>
+                        <ul>
+                            <li><a href="#">기업문화</a></li>
+                            <li><a href="#">복지</a></li>
+                            <li><a href="#">펄어비스 소식</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">채용</a>
+                        <ul>
+                            <li><a href="#">채용소개</a></li>
+                            <li><a href="#">지원하기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">투자정보</a>
+                        <ul>
+                            <li><a href="#">기업지배구조</a></li>
+                            <li><a href="#">주가정보</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">공사&middot;공고</a></li>
+                            <li><a href="#">IR 자료</a></li>
+                            <li><a href="#">지속가능경영</a></li>
+                        </ul>
+                    </li>
             </div>
-            <div class="conInfo cw">
+            <div class="footMenu2">
+                <ul>
+                    <li><a href="#">광고/제휴 문의</a></li>
+                    <li><a href="#">기업윤리 신고센터</a></li>
+                    <li class="blue"><a href="#">개인정보 처리방침</a></li>
+                    <li class="blankStyle"><a href="#">펄어비스 스토어</a></li>
+                    <li class="blankStyle"><a href="#">게임 고객센터</a></li>
+                </ul>
+            </div>
+            <div class="conInfo">
                 <section class="footLogo">
                     <h1>
                         <a href="#">
@@ -279,13 +290,13 @@
                 <section class="snsMenu">
                     <ul>
                         <li>
-                            <a href="#">Facebook</a>
+                            <a href="#"><img src="./img/icn_footer_facebook_round.svg" alt="facebook"></a>
                         </li>
                         <li>
-                            <a href="#">Youtube</a>
+                            <a href="#"><img src="./img/icn_footer_youtube_round.svg" alt="Youtube"></a>
                         </li>
                         <li>
-                            <a href="#">Instargram</a>
+                            <a href="#"><img src="./img/icn_footer_linkedin_round.svg" alt="Instargram"></a>
                         </li>
                     </ul>
                 </section>

@@ -1,17 +1,5 @@
-/* common */
-html{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 14px;
-}
-.blankStyle:after{
-    content:"";
-    width:12px;
-    height:12px;
-    display:inline-block;
-    margin-left:4px;
-    background:url("../img/icn_header_new_win.svg") no-repeat 50% 50%;
-}
-/* layout */
+@media (min-width:769px){
+    /* layout */
 .contents_wrap{}
 header{
     position: fixed;
@@ -35,7 +23,7 @@ header:hover{
     color:#000;
     height: 300px;
 }
-/* --------------------------------header--------------------------------- */
+/* ------------------header------------------ */
 .innerHeader{
     height:70px;
     width:1440px;
@@ -114,7 +102,7 @@ header:hover .logoArea a{
 .langList>ul>li:last-of-type:after{display: none;}
 
 
-/* --------------------------------main--------------------------------- */
+/* ----------------main---------------- */
 /* banner */
 main{position: relative;}
 .videoBanner{
@@ -372,5 +360,8 @@ footer{margin-top:200px}
 }
 .footLogo img{
     width:120px;
+}
+.mo{display: none;}
+
 }
 
