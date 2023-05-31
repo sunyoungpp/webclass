@@ -15,5 +15,19 @@ window.onload = function(){
           }        
           
     });
+    
+    let noticeSlider = new Swiper(".notice",{
+        pagination: {
+            el: '.swiper-pagination',
+          },
+          breakpoints:{
+            280:{
+                slidesPerView: 1,
+            },
+            768:{
+                slidesPerView: 4,
+            }
+          }   
         
+    })
 }
