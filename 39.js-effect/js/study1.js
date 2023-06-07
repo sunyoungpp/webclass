@@ -14,7 +14,6 @@ $(document).ready(function () {
       } else {
         //메뉴가 열려있는 상태->메뉴를 닫는 기능
         $("nav").removeClass("on")
-  
       }
     })
   
@@ -39,6 +38,10 @@ $(document).ready(function () {
   
       // let li2depth = $(this).children("ul").children().length
       // $(this).css("height", (li2depth + 1) * 50 + "px")
-    });
+    })
+
+    $(".gnb ul").click(function(){
+      return false
+    })
   
   })
