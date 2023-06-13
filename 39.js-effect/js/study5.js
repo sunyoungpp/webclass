@@ -67,6 +67,28 @@ $(document).ready(function(){
         moveSlider(count)
     })
 
+
+    // 자동슬라이드기능
+    let timer = setInterval(function(){
+        count++
+        if(count>4){count=0}
+        moveSlider(count)
+    },2000)
+    
+
+    $(".station").mouseover(function(){
+        clearInterval(timer)
+    })
+    $(".station").mouseout(function(){
+        timer = setInterval(function(){
+            count++
+            if(count>4){count=0}
+            moveSlider(count)
+        },2000)
+    })
+   
+
+
     function moveSlider(idx){
         $(".train").css("transform","translateX("+(-20*idx)+"%")
     }
