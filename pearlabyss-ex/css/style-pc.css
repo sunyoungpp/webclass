@@ -341,6 +341,7 @@ footer{margin-top:200px}
 .conInfo::before{
     content: "";
     width:138px;
+    border: 1px solid red;
 }
 .footLogo{
     display: flex;
