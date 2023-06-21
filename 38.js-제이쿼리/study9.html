@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mousemove 이벤트</title>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <style>
+        *{margin: 0;padding: 0;}
+        .box{position: fixed;left: 0;top: 0;font-size: 4rem;}
+        .con{height: 2000px;background: lightskyblue;}
+    </style>
+</head>
+<body>
+    <div class="con"></div>
+    <div class="box">
+        <h1>mousemove(💎)</h1>
+        <p>사용자가 마우스를 움직일 때 마다 실행되는 함수</p>
+        <p class="offset">
+            문서기준x좌표: <span class="xCord">0</span>
+            <br>
+            문서기준y좌표: <span class="yCord">0</span>
+        </p>
+        <p class="offset">
+            화면기준x좌표: <span class="xCord2">0</span>
+            <br>
+            화면기준y좌표: <span class="yCord2">0</span>
+        </p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            // 마우스를 움직일 때마다 실행되는 mousemove함수
+            $(document).mousemove(function(event){
+                let dx = event.pageX
+                let dy = event.pageY
+                $(".xCord").text(dx)
+                $(".yCord").text(dy)
+                let cx = event.clientX
+                let cy = event.clientY
+                $(".xCord2").text(cx)
+                $(".yCord2").text(cy)
+            })
+        })
+    </script>
+</body>
+</html>
