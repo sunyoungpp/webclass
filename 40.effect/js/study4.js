@@ -1,17 +1,28 @@
 $(document).ready(function(){
     
     let result = "";
-    for(let i=1 ; i<=20 ; i++){
-        result+=`<li>
-        <img class="small" src="./img/s${i}.jpg" alt="갤러리${i}이미지">
-        <img class="big" src="./img/pic${i}.jpg" alt="갤러리${i}이미지">
-        <h2 class="title">art work ${i}</h2>
-        <p>Artwork description comes here.<br>2023.06.20</p>
-        <span class="btnClose">close</span>
-        </li>`
-        }
+    // for(let i=1 ; i<=20 ; i++){
+    //     result+=`<li>
+    //     <img class="small" src="./img/s${i}.jpg" alt="갤러리${i}이미지">
+    //     <img class="big" src="./img/pic${i}.jpg" alt="갤러리${i}이미지">
+    //     <h2 class="title">art work ${i}</h2>
+    //     <p>Artwork description comes here.<br>2023.06.20</p>
+    //     <span class="btnClose">close</span>
+    //     </li>`
+    //     }
     // document.querySelector(".train").innerHTML = result
+
+    for(let i=0; i<20; i++){
+        result+= `<li>
+            <img class="small" src="./img/${artwork[i].imgFileName}" alt="${artwork[i].title}">
+            <h2 class="title">${artwork[i].title}</h2>
+            <p>${artwork[i].description}</p>
+            <span class="btnClose">close</span>
+        </li>`
+    }
+
     $(".train").html(result)
+    
 
     $(".stationMenu>li").click(function(){
         let idx = $(this).index() //클릭한 리스트의 순번을 리턴함

@@ -1,0 +1,77 @@
+*{margin: 0;padding: 0;}
+html{cursor: none;}
+.cursor{
+    background: lightseagreen;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s ease 0s,
+    width 0.6s ease 0s,
+    height 0.6s ease 0s;
+    pointer-events: none;
+}
+.cursor.on{
+    opacity: 1;
+}
+.cursor.on.big{
+    width: 120px;
+    height: 120px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+.wheelAni{
+    display: none;
+    border: 1px solid #fff;
+    width: 20px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -40px;
+    font-size: 0;
+    border-radius: 10px;
+}
+.wh{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 10px;
+    border-radius: 50%;
+    animation: wheelAni 1s ease 0s infinite alternate;
+}
+@keyframes wheelAni {
+    0%{top: 10px;}
+    100%{top: 60px;}
+}
+.cursor.on.big .wheelAni{display: block;}
+.cursor.on.big+.cursorGuideBox{display: block;}
+/* 마우스커서를 따라다니는 설명 텍스트 영역 */
+.cursorGuideBox{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150px;
+    pointer-events: none;
+    background: #ffffff44;
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.wrap{}
+.wrap>section{
+    height: 80vh;
+}
+.wrap>section:nth-of-type(1){background: lightcoral;}
+.wrap>section:nth-of-type(2){background: lightskyblue;}
+.wrap>section:nth-of-type(3){background: lightyellow;}
+.wrap>section:nth-of-type(4){background: lightgreen;}
